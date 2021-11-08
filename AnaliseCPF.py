@@ -11,7 +11,7 @@ class NumeroCPF:
         self.numero_cpf = cpf if len(cpf) != 0 else []
         self.numero_valido = True
         self.resultado_calculo = None
-        if len(self.numero_cpf) == 11 and numero_cpf.replace(numero_cpf[0], '') != '':
+        if len(self.numero_cpf) == 11 and ''.join(cpf).replace(numero_cpf[0], '') != '':
             self.digitos_verificadores = list(numero_cpf[len(numero_cpf)-2:])
         else:
             self.numero_valido = False
