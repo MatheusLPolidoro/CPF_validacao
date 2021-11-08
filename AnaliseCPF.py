@@ -54,4 +54,4 @@ class NumeroCPF:
             }
             return [self.numero_cpf[8], self.estados]
         else:
-            return [None, None]
+            return ['inicial', None]
