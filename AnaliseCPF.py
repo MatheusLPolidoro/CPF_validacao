@@ -18,8 +18,8 @@ class NumeroCPF:
 
     def gerar_digitos_verificadores(self):
         if self.numero_valido != False:
-            primeiro_digito = digito_cpf(self.numero_cpf, 10, 9)
-            segundo_digito = digito_cpf(self.numero_cpf, 11, 10)
+            primeiro_digito = digito_cpf(self.numero_cpf, 10, 9) # 1º argumento: Lista, 2º argumento: qual digito gerar(10), 3º quantidade de números para percorrer
+            segundo_digito = digito_cpf(self.numero_cpf, 11, 10) # 1º argumento: Lista, 2º argumento: qual digito gerar(11), 3º quantidade de números para percorrer
             self.resultado_calculo = [primeiro_digito, segundo_digito]
         else:
             self.resultado_calculo = None
